@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<MusicoModel>
+
+@{
     ViewData["Title"] = "Músicos";
 }
 
@@ -6,4 +8,36 @@
     <div>
         <a class="btn btn-primary" role="button" asp-controller="Musicos" asp-action="Criar">Adicionar Músico</a>
     </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var musico in Model)
+                {
+
+                    <tr>
+                        <td>@musico.Id</td>
+                        <td>@musico.Name</td>
+
+                        <td>
+
+                            <a role="button" asp-route-id="@musico.Id" asp-controller="Musicos" asp-action="Ver" class="btn btn-primary" style="padding: 5px 15px">Ver</a>
+                            <a role="button" class="btn btn-primary" style="padding: 5px 15px">Editar</a>
+                            <a role="button" class="btn btn-danger" style="padding: 5px 15px">Remover</a>
+
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
 </div>

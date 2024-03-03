@@ -1,0 +1,28 @@
+﻿@model InstrumentModel
+
+@{
+    ViewData["Title"] = "Adicionar Instrumento";
+}
+
+<div class="text-center">
+    <h2>Cadastrar Instrumento</h2>
+    
+    <div class="ajuste-itens">
+        <form asp-controller="Instrumentos" asp-action="Criar" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputNome">Nome</label>
+                    <input type="text" asp-for="@Model.Name" class="form-control" id="inputNome" placeholder="Nome">
+                </div>
+            
+
+                <button type="submit" class="btn btn-primary btn-block">Criar</button>
+            
+            </div>
+    
+
+        </form>
+        <a class="btn btn-secondary btn-block" role="button" asp-controller="Instrumentos" asp-action="Index">Voltar</a>
+    </div>
+</div>
+

@@ -1,0 +1,43 @@
+﻿@model List<InstrumentModel>
+
+@{
+    ViewData["Title"] = "Instrumentos";
+}
+
+<div class="text-center">
+    <div>
+        <a class="btn btn-primary" role="button" asp-controller="Instrumentos" asp-action="Criar">Adicionar Instrumento</a>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var instrumento in Model)
+                {
+
+                    <tr>
+                        <td>@instrumento.Id</td>
+                        <td>@instrumento.Name</td>
+
+                        <td>
+
+                            
+                            <a role="button" class="btn btn-primary" style="padding: 5px 15px">Editar</a>
+                            <a role="button" class="btn btn-danger" style="padding: 5px 15px">Remover</a>
+
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+</div>

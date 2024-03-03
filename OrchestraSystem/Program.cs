@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using OrchestraSystem.Data;
+using OrchestraSystem.Repositorio;
+using OrchestraSystem.Repositorio.Interfaces;
+
 namespace OrchestraSystem
 {
     public class Program
@@ -8,6 +13,14 @@ namespace OrchestraSystem
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddDbContextPool<OrchestraContext>(options =>
+                 options.UseMySql(mySqlConnection,
+                       ServerVersion.AutoDetect(mySqlConnection)));
+
+            builder.Services.AddScoped<IInstrumentRepositorio, InstrumentRepositorio>();
+            builder.Services.AddScoped<IMusicoRepositorio, MusicoRepositorio>();
 
             var app = builder.Build();
 

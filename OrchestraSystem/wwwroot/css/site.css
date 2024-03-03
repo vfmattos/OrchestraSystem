@@ -14,5 +14,55 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230612/pngtree-taiwan-symphony-orchestra-performing-in-front-of-thousands-of-spectators-image_2930614.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 2.1em;
+    font-style: italic;
+    text-transform: none;
+    text-shadow: rgb(255, 0, 0) -1px 0px 0px, rgb(0, 255, 255) 1px 0px 0px;
+    letter-spacing: 3.4px;
+    word-spacing: 0.6px;
+}
+
+h2 {
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 2.1em;
+    font-style: italic;
+    text-transform: none;
+    text-shadow: rgb(255, 0, 0) -1px 0px 0px, rgb(0, 255, 255) 1px 0px 0px;
+    letter-spacing: 3.4px;
+    word-spacing: 0.6px;
+}
+
+input.form-control {
+    background-color: rgba(0,0,0,0.81);
+}
+
+label{
+    color: #ffffff;
+}
+
+table, tr, td {
+    color: #ffffff;
+}
+
+.table {
+    background-color: rgba(0,0,0,0.81);
+}
+
+form {
+    background-color: rgba(0,0,0,0.81);
+}
+
+.btn-block{
+    width:50%;
+    margin-top:20px;
 }

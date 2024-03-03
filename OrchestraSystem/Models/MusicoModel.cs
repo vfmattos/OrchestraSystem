@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.Metrics;
-
+﻿
 namespace OrchestraSystem.Models
 {
     public class MusicoModel
@@ -11,10 +10,8 @@ namespace OrchestraSystem.Models
         public string? Email { get; set; }
         public string? Nacionalidade { get; set; }
         public DateTime? DateOfBirth { get; set; }
-        public List<Instrument> Instruments { get; set; }
-        public int OrchestraId { get; set; }
-        public OrchestraModel? Orchestra { get; set; }
-        public List<SymphonyMusicianModel> SymphonyMusicians { get; set; }
+        public List<InstrumentModel> Instruments { get; set; }
+        
 
     }
 }

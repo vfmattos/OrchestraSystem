@@ -24,12 +24,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/vitor/source/repos/OrchestraSystem/OrchestraSystem/Views/Instrumentos/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1bWVudG9zXENyaWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vitor/source/repos/OrchestraSystem/OrchestraSystem/Views/Instrumentos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1bWVudG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/vitor/source/repos/OrchestraSystem/OrchestraSystem/Views/Musicos/Criar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNvc1xDcmlhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/vitor/source/repos/OrchestraSystem/OrchestraSystem/Views/Musicos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vitor/source/repos/OrchestraSystem/OrchestraSystem/Views/Musicos/Ver.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNvc1xWZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/vitor/source/repos/OrchestraSystem/OrchestraSystem/Views/Shared/Error.cshtml]

@@ -5,25 +5,48 @@
 }
 
 <div class="text-center">
-    <h2>Cadastrar Usuário</h2>
-
-    <form asp-controller="Usuario" asp-action="Criar" method="post">
-        <div class="form-group">
-            <label for="nome">Nome</label>
-            <input asp-for="@Model.Name" type="text" class="form-control" placeholder="Digite seu nome">
-            
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input asp-for="@Model.Email" type="text" class="form-control" placeholder="Digite seu email">
-            @Html.ValidationMessageFor(x => x.Email)
-        </div>
-        
-        <button type="submit" class="btn btn-primary btn-block">Adicionar</button>
-    </form>
-    <br />
+    <h2>Cadastrar Músico</h2>
 </div>
 
+    <form asp-controller="Musicos" asp-action="Criar" method="post">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputNome">Nome</label>
+                <input type="text" asp-for="@Model.Name" class="form-control" id="inputNome" placeholder="Nome">
+            </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" asp-for="@Model.Email"  class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputNacionalidade">Nacionalidade</label>
+                    <input type="text" asp-for="@Model.Nacionalidade" class="form-control" id="inputNacionalidade" placeholder="Nacionalidade">
+            </div>
+        </div>
+            <div class="form-group col-md-6">
+            <label for="inputDate">Data de Nascimento</label>
+                <input type="date" asp-for="@Model.DateOfBirth" class="form-control" id="inputDate">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Instruments" class="control-label">Selecione os Instrumentos</label>
+            <br />
+            @foreach (var instrument in ViewBag.Instruments)
+            {
+                <div class="form-check">
+                    <input type="checkbox" id="instrument@(instrument.Value)" name="SelectedInstruments" value="@instrument.Value" class="form-check-input" />
+                    <label for="instrument@(instrument.Value)" class="form-check-label">@instrument.Text</label>
+                </div>
+            }
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-block">Criar</button>
+        
+    </form>
+    <br />
+
+
 <div>
-    <a class="btn btn-secondary btn-block" role="button" asp-controller="Usuario" asp-action="Index">Voltar</a>
+    <a class="btn btn-secondary btn-block" role="button" asp-controller="Musicos" asp-action="Index">Voltar</a>
 </div>

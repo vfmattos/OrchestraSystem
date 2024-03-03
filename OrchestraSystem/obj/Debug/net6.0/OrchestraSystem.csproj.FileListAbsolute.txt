@@ -29,3 +29,14 @@ C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\obj\Debug\net6.0\ref
 C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\obj\Debug\net6.0\OrchestraSystem.pdb
 C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\obj\Debug\net6.0\OrchestraSystem.genruntimeconfig.cache
 C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\obj\Debug\net6.0\ref\OrchestraSystem.dll
+C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\bin\Debug\net6.0\Humanizer.dll
+C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\vitor\source\repos\OrchestraSystem\OrchestraSystem\obj\Debug\net6.0\OrchestraSystem.csproj.CopyComplete

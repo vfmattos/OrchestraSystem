@@ -1,0 +1,57 @@
+﻿@model MusicoModel
+
+@{
+    ViewData["Title"] = "Músico";
+}
+
+<html>
+    <head>
+        <style>
+
+            .container-info {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #292929;
+                border-radius: 5px;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+                color:white;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .info-item {
+                margin-bottom: 10px;
+            }
+
+            .label {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+
+    <a role="button" class="btn btn-primary" asp-controller="Musicos" asp-action="Index">Voltar</a>
+
+        <div class="container-info">
+            <h1>Informações Pessoais</h1>
+            <div class="info-item">
+                <span class="label">Nome:</span> @Model.Name
+            </div>
+            
+            <div class="info-item">
+                <span class="label">E-mail:</span> @Model.Email
+            </div>
+            <div class="info-item">
+                <span class="label">Nacionalidade:</span> @Model.Nacionalidade
+            </div>
+            <div class="info-item">
+                <span class="label">Data de Nascimento:</span> @Model.DateOfBirth
+            </div>
+        </div>
+
+
+    </body>
+</html>
