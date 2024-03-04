@@ -11,6 +11,7 @@ namespace OrchestraSystem
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
@@ -23,6 +24,8 @@ namespace OrchestraSystem
             builder.Services.AddScoped<IMusicoRepositorio, MusicoRepositorio>();
 
             var app = builder.Build();
+
+            
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

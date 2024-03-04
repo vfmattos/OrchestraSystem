@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OrchestraSystem.Data;
 
@@ -10,9 +11,10 @@ using OrchestraSystem.Data;
 namespace OrchestraSystem.Migrations
 {
     [DbContext(typeof(OrchestraContext))]
-    partial class OrchestraContextModelSnapshot : ModelSnapshot
+    [Migration("20240303233441_UpdateMusicoInstrumentsNavigationProperty")]
+    partial class UpdateMusicoInstrumentsNavigationProperty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

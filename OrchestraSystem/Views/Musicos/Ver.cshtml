@@ -50,6 +50,23 @@
             <div class="info-item">
                 <span class="label">Data de Nascimento:</span> @Model.DateOfBirth
             </div>
+
+            <h3>Instrumentos:</h3>
+
+
+            <ul>
+                @if (Model.Instruments != null)
+                {
+                    @foreach (var instrument in Model.Instruments)
+                    {
+                        <li>@instrument.Name</li> <!-- Substitua "Nome" pelo nome da propriedade do instrumento que você deseja exibir -->
+                    }
+                }
+                else
+                {
+                    <li>Sem instrumentos registrados</li>
+                }
+        </ul>
         </div>
 
 

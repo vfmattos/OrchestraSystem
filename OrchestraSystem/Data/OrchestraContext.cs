@@ -15,5 +15,15 @@ namespace OrchestraSystem.Data
         public DbSet<SymphonyModel> Symphony { get; set; }
         public DbSet<InstrumentModel> Instrument { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<MusicoModel>()
+                .HasMany(m => m.Instruments) // Um músico possui muitos instrumentos
+                .WithMany(i => i.Musicians)  // Um instrumento é tocado por muitos músicos
+                .UsingEntity(j => j.ToTable("MusicoInstrument")); // Nome da tabela de junção
+        }
+
+       
+
     }
 }

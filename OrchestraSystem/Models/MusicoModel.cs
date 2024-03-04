@@ -10,7 +10,7 @@ namespace OrchestraSystem.Models
         public string? Email { get; set; }
         public string? Nacionalidade { get; set; }
         public DateTime? DateOfBirth { get; set; }
-        public List<InstrumentModel> Instruments { get; set; }
+        public virtual List<InstrumentModel> Instruments { get; set; }
         
 
     }

@@ -35,7 +35,7 @@
             @foreach (var instrument in ViewBag.Instruments)
             {
                 <div class="form-check">
-                    <input type="checkbox" id="instrument@(instrument.Value)" name="SelectedInstruments" value="@instrument.Value" class="form-check-input" />
+                    <input type="checkbox" id="instrument@(instrument.Value)" name="selectedInstruments" value="@instrument.Value" class="form-check-input" />
                     <label for="instrument@(instrument.Value)" class="form-check-label">@instrument.Text</label>
                 </div>
             }
